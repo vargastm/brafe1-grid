@@ -1,5 +1,4 @@
 /* Reset */
-
 body, h1, h2, h3, p, ul {
 	padding: 0px;
 	margin: 0px;
@@ -20,7 +19,6 @@ img {
 }
 
 /* Menu */
-
 .menu {
 	background: #252525;
 	padding: 15px 0;
@@ -36,7 +34,7 @@ img {
 
 .menu-nav a {
 	text-decoration: none;
-	color: #fff;
+	color: #FFFFFF;
 	font-size: 1.125em;
 	display: block;
 	padding: 10px;
@@ -44,11 +42,10 @@ img {
 }
 
 /* Introduction */
-
 .introduction {
 	background: url('../images/bg-intro.jpg') no-repeat center center;
 	background-size: cover;
-	color: #fff;
+	color: #FFFFFF;
 	padding: 150px 0;
 	text-align: center;
 }
@@ -63,7 +60,7 @@ img {
 	display: block;
 	width: 20px;
 	height: 4px;
-	background: #fff;
+	background: #FFFFFF;
 	margin: 10px auto;
 }
 
@@ -73,38 +70,55 @@ img {
 }
 
 /* About */
+.about {
+	padding: 60px 0;
+}
 
 .about h2 {
 	font-size: 2.25em;
+	text-align: center;
+	margin-bottom: 60px;
 }
 
 .about-item h3 {
 	font-size: 2.25em;
 	line-height: 1em;
 	background: #252525;
-	color: #fff;
+	color: #FFFFFF;
 	font-style: italic;
 	font-weight: normal;
 	text-align: center;
 	position: relative;
+	width: 220px;
+	padding: 5px 0 10px 0;
+	top: -25px;
 }
 
 .about > p {
 	font-size: 1.125em;
 	line-height: 1.4em;
 	font-style: italic;
+	max-width: 460px;
+	margin: 20px auto;
+	text-align: center;
 }
 
 /* Products */
-
 .products {
-	background: #e7e4d8;
-	border-top: 3px solid #d6d3c8;
-	border-bottom: 3px solid #d6d3c8;
+	background: #E7E4D8;
+	border-top: 3px solid #D6D3C8;
+	border-bottom: 3px solid #D6D3C8;
+	padding: 60px 0;
+}
+
+.products-item {
+	margin-bottom: 40px;
 }
 
 .products-item h2 {
 	font-size: 2.25em;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 .products-item h2::before {
@@ -114,8 +128,9 @@ img {
 	height: 100px;
 	background: currentColor;
 	border-radius: 50%;
-	border: 5px solid #e7e4d8;
+	border: 5px solid #E7E4D8;
 	box-shadow: 0 0 0 5px currentColor;
+	margin: 20px auto;
 }
 
 h2.products-paulista::before {
@@ -123,11 +138,11 @@ h2.products-paulista::before {
 }
 
 h2.products-carioca::before {
-	color: #c17139;
+	color: #C17139;
 }
 
 h2.products-mineiro::before {
-	color: #d7a54d;
+	color: #D7A54D;
 }
 
 .products-item p {
@@ -143,17 +158,31 @@ h2.products-mineiro::before {
 	font-size: 1.125em;
 	font-weight: bold;
 	text-transform: uppercase;
+	width: 180px;
+	display: block;
+	padding: 15px 0;
+	margin: 0 auto;
 }
 
 /* Locations */
+.locations {
+	padding: 60px 0;
+}
+
+.location-item {
+	margin-bottom: 40px;
+}
 
 .location-item h2 {
 	font-size: 2.25em;
+	margin-bottom: 20px;
 }
 
 .location-item p {
 	font-size: 1.125em;
 	line-height: 1.4em;
+	max-width: 320px;
+	margin-bottom: 40px;
 }
 
 .location-item a {
@@ -162,12 +191,13 @@ h2.products-mineiro::before {
 	text-decoration: none;
 	border: 3px solid;
 	color: #252525;
+	padding: 10px 20px;
 }
 
 /* Newsletter */
-
 .newsletter {
-	background: #e7e4d8;
+	background: #E7E4D8;
+	padding: 30px 0;
 }
 
 .newsletter-info h2 {
@@ -189,6 +219,9 @@ h2.products-mineiro::before {
 	font-size: 1.5em;
 	font-style: italic;
 	font-family: Georgia, serif;
+	width: calc(100% - 140px);
+	padding: 10px;
+	float: left;
 }
 
 .newsletter button {
@@ -197,14 +230,21 @@ h2.products-mineiro::before {
 	font-family: Georgia, serif;
 	text-transform: uppercase;
 	font-size: 1.5em;
-	color: #fff;
+	color: #FFFFFF;
 	cursor: pointer;
+	width: 140px;
+	padding: 13px 0;
+	float: left;
 }
 
 /*Footer*/
-
 .footer {
-	background: #d6d3c8;
+	background: #D6D3C8;
+	padding: 40px 0;
+}
+
+.footer img {
+	float: right;
 }
 
 .footer p {
@@ -226,4 +266,15 @@ h2.products-mineiro::before {
 	.introduction {
 		padding: 60px 0;
 	}
+
+	.footer img {
+		float: none;
+		margin-top: 20px;
+	}
+
+	.menu-logo {
+    float: none;
+    margin: 0 auto;
+    max-width: 135px;
+  }
 }
